@@ -1,0 +1,53 @@
+{
+  "career": [
+    {
+      "id": "1",
+      "title": "Senior React Developer",
+      "salary": 50000,
+      "location": "London, UK",
+      "description": "Looking for an experienced React developer to lead a team in building scalable web applications. Must have a deep understanding of React.js, Redux, and modern JavaScript."
+    },
+    {
+      "id": "2",
+      "title": "Plumber",
+      "salary": 40000,
+      "location": "Bowser's Castle",
+      "description": "Seeking a skilled plumber to maintain and repair the intricate pipe systems in Bowser's Castle. Experience in high-temperature environments preferred."
+    },
+    {
+      "id": "3",
+      "title": "Gym Leader",
+      "salary": 75000,
+      "location": "Kanto Region",
+      "description": "Become a gym leader in the Kanto Region. Train Pokémon, challenge trainers, and uphold the honor of the gym. Battle experience required."
+    },
+    {
+      "id": "4",
+      "title": "Vue Developer",
+      "salary": 40000,
+      "location": "Liverpool, UK",
+      "description": "Looking for a Vue.js developer to create dynamic and interactive web interfaces. Proficiency in Vuex and Vuetify is a plus."
+    },
+    {
+      "id": "5",
+      "title": "Tutorial Maker",
+      "salary": 35000,
+      "location": "Manchester, UK",
+      "description": "Join our team as a tutorial maker. Create engaging and easy-to-follow tutorials for various software and technical topics."
+    },
+    {
+      "id": "6",
+      "title": "Website Manager",
+      "salary": 50000,
+      "location": "Berlin, Germany",
+      "description": "Manage and maintain high-traffic websites. Ensure uptime, update content, and improve user experience. WordPress experience preferred."
+    },
+    {
+      "id": "7",
+      "title": "Food Tester",
+      "salary": 30000,
+      "location": "London, UK",
+      "description": "We are looking for a food tester to evaluate and provide feedback on new recipes and products. A passion for food and a keen palate are essential."
+    }
+  ]
+}

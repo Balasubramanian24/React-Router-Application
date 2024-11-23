@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background: var(--secondary);
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 20px 0;
+}
+
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+/* navbar */
+header nav{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav h1{
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+
+header nav a{
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+} 
+
+header nav a.active{
+  background: var(--primary);
+}
+
+
+/* page content */
+main{
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+
+/* help layout */
+
+.contact-container {
+  max-width: 600px;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: grey;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* faq */
+.faq-container {
+  max-width: 600px;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+  max-height: 200px; 
+  padding: 15px;
+}
+
+
+/* Faq & contact */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  padding: 10px 20px;
+  background-color: #007bff; 
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none; 
+  font-size: 16px;
+  font-weight: bold;
+  color: white; 
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0056b3; 
+  color: #f9f9f9; 
+}
+
+nav a.active {
+  background-color: #0056b3;
+  color: #f9f9f9; 
+  border: 2px solid #ffffff; 
+}
+
+
+/* careers list */
+.careers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.careers a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.careers a:hover {
+  background-color: #f0f8ff;
+  border-color: #00aaff;
+}
+
+.careers p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.careers p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+/* careers details */
+.current-career {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.current-career h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-indent: 20px; 
+}
+
+.current-career h2 {
+  font-size: 20px;
+  color: #555;
+  margin: 10px 0;
+  text-indent: 20px; 
+}
+
+.current-career p {
+  margin: 15px 20px; 
+  padding: 10px;
+  background-color: #ffffff;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+
+/* breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px 0;
+  padding-left: 10%; 
+}
+
+.crumb::after {
+  content: ' > ';
+  margin: 5px;
+  margin-left: 5px;
+  color: #888;
+}
+
+.crumb:last-child::after {
+  display: none;
+}
+
+.crumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.crumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  color: #aaa;
+}
